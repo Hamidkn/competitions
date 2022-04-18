@@ -11,7 +11,7 @@ function FetchData(query, page) {
       await setLoading(true);
       await setError(false);
       const res = await axios.get(
-        `http://xoosha.com/ws/1/test.php?offset=${page}`
+        `https://xoosha.com/ws/1/test.php?offset=${page}`
       );
       await setList((prev)=>
         [...prev, ...res.data.map((d) =>  d)]
