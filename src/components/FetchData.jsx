@@ -6,6 +6,7 @@ function FetchData(query, page) {
   const [error, setError] = useState(false);
   const [list, setList] = useState([]);
 
+  
   const sendQuery = useCallback(async () => {
     try {
       await setLoading(true);
